@@ -16,9 +16,9 @@
 
 const degrees_celsius = Number.parseFloat(prompt('Введите температуру в градусах Цельсия: '));
 
-const result =num(degrees_celsius);
-alert(`Цельсий: ${degrees_celsius}   Фаренгейт: ${result.toFixed(1)}`);
-function num() {
-    return Number((9 / 5) * degrees_celsius + 32);
+const fahrenheit = convertCelsiumToFahrenheit(degrees_celsius);
+alert(`Цельсий: ${degrees_celsius}   Фаренгейт: ${fahrenheit.toFixed(1)}`);
+function convertCelsiumToFahrenheit() {
+    return ((9 / 5) * degrees_celsius + 32);
 }
 
